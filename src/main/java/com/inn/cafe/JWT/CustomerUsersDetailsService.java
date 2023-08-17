@@ -1,6 +1,6 @@
 package com.inn.cafe.JWT;
 
-import com.inn.cafe.dao.UserDao;
+import com.inn.cafe.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
@@ -17,7 +17,7 @@ import java.util.Objects;
 public class CustomerUsersDetailsService implements UserDetailsService {
 
     @Autowired
-    UserDao userDao;
+    UserRepository userDao;
 
     private com.inn.cafe.model.User userDetail;
 
